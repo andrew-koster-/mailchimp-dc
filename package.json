@@ -1,0 +1,42 @@
+{
+  "name": "mailchimp-dc",
+  "version": "1.0.0",
+  "description": "Get the Data Center (dc) value from a Mailchimp API key.",
+  "license": "MIT",
+  "repository": "radiovisual/mailchimp-dc",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "key",
+    "api",
+    "from",
+    "value",
+    "dc",
+    "center",
+    "data",
+    "mailchimp",
+    "find",
+    "read",
+    "extract",
+    "grab",
+    "fetch",
+    "get"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.14.0"
+  }
+}
