@@ -2,7 +2,10 @@
 
 > Get the Data Center (dc) value from a Mailchimp API key.
 
-Extract the Data Center (dc) value from your Mailchimp API key in the format of: `0000000000000000-us10`
+`'0000000000000000-us10'` → `'us10'`
+
+The `dc` value is used to direct your API requests to the appropriate Data Center. It is used in API calls
+with the following uri: `https://<dc>.api.mailchimp.com/3.0/`
 
 
 ## Install
@@ -17,7 +20,7 @@ $ npm install --save mailchimp-dc
 ```js
 const dc = require('mailchimp-dc');
 
-dc('00000000-us10');
+dc('00000000000000000000000000000000-us10');
 //=> 'us10'
 ```
 
