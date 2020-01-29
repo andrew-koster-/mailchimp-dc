@@ -1,8 +1,15 @@
-'use strict';
-module.exports = function (str) {
-	if (typeof str !== 'string') {
-		throw new TypeError('mailchimp-dc expected a string');
-	}
+module.exports = {
+	dc: (authToken) => {
+		if (typeof authToken !== 'string') {
+			throw new TypeError('mailchimp-dc expected an auth token string.')
+		}
 
-	return str.split('-').pop();
-};
+		return authToken.split('-').pop()
+	},
+	url: (authToken) => {
+		
+		const dcUrlPart = this.dc(authToken)
+
+		return `https://${dcUrlPart}.api.mailchimp.com/3.0/`
+	},
+}
